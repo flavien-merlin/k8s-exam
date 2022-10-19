@@ -19,7 +19,7 @@ kubectl get cm keyvalcfgmap -o yaml
 3.  Create an nginx pod and load environment values from the above configmap keyvalcfgmap and exec into the pod and verify the environment variables and delete the pod
 ```
 kubectl run nginx-flav --image=nginx --restart=Never --dry-run -o yaml > nginx-pod.yml
-edit yaml to match configmap :
+edit yaml to match configmap : nginx-pod.yml
 kubectl create -f nginx-pod.yml
 kubectl exec -it nginx-flav -- env
 kubectl delete po nginx

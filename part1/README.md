@@ -1,4 +1,4 @@
-### 1. Part 1 k8s exam, yaml inside the folder part1:
+### k8s exam:
 
 1. Deploy a pod named nginx-pod using the nginx:alpine image. Name: nginx-pod-yourname Image: nginx:alpine 
 ```

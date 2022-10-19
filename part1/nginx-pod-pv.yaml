@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: use-pvspec-flav
+  labels:
+    run: use-pv
+spec:
+  volumes:
+    - name: data
+      persistentVolumeClaim:
+        claimName: pv1-claim
+  containers:
+  - name: use-pv
+    image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    volumeMounts:
+      - mountPath: "/opt/data"
+        name: data

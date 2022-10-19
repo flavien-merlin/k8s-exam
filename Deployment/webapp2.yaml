@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webapp-flav
+  name: webapp-flav
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp-flav
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: webapp-flav
+    spec:
+      containers:
+      - image: nginx:1.17.1
+        name: nginx
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}

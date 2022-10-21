@@ -1,13 +1,13 @@
 # k8s exam:
 --------------------------------------------------------
 ### Part 1:
-Part1 : [part1](part1/)
+[part1](part1/)
 --------------------------------------------------------
 ### Pod Design Questions:
-Pod Design : [PodDesign](PodDesign)
+[PodDesign](PodDesign)
 --------------------------------------------------------
 ### Deployment Questions:
-Deployment : [Deployment](Deployment)
+[Deployment](Deployment)
 --------------------------------------------------------
 ### ConfigMap Questions:
-ConfigMap : [configmap](configmap)
+[configmap](configmap)

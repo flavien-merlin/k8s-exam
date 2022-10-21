@@ -10,4 +10,4 @@
 [Deployment](Deployment)
 --------------------------------------------------------
 ### ConfigMap Questions:
-[configmap](configmap)
+[ConfigMap](configmap)
